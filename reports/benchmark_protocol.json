@@ -1,0 +1,45 @@
+{
+  "selection": [
+    "validation recall_at_10pct",
+    "validation average_precision",
+    "family name",
+    "config index"
+  ],
+  "seed": 42,
+  "tie_order_seed": 2026,
+  "features": [
+    "clicks_w1",
+    "clicks_w2",
+    "clicks_w3",
+    "clicks_w4",
+    "active_days",
+    "days_since_activity",
+    "last_week_change",
+    "total_clicks"
+  ],
+  "configurations": {
+    "Logistic regression / 0": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('logisticregression',\n                 LogisticRegression(C=0.1, max_iter=2000, random_state=42))])",
+    "Logistic regression / 1": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('logisticregression',\n                 LogisticRegression(max_iter=2000, random_state=42))])",
+    "Logistic regression / 2": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('logisticregression',\n                 LogisticRegression(C=10.0, max_iter=2000, random_state=42))])",
+    "Decision tree / 0": "DecisionTreeClassifier(max_depth=3, min_samples_leaf=20, random_state=42)",
+    "Decision tree / 1": "DecisionTreeClassifier(max_depth=5, min_samples_leaf=20, random_state=42)",
+    "Decision tree / 2": "DecisionTreeClassifier(max_depth=8, min_samples_leaf=20, random_state=42)",
+    "Random forest / 0": "RandomForestClassifier(min_samples_leaf=5, n_estimators=200, n_jobs=1,\n                       random_state=42)",
+    "Random forest / 1": "RandomForestClassifier(min_samples_leaf=15, n_estimators=200, n_jobs=1,\n                       random_state=42)",
+    "Random forest / 2": "RandomForestClassifier(min_samples_leaf=30, n_estimators=200, n_jobs=1,\n                       random_state=42)",
+    "Gradient boosting / 0": "GradientBoostingClassifier(learning_rate=0.05, max_depth=1, min_samples_leaf=15,\n                           random_state=42)",
+    "Gradient boosting / 1": "GradientBoostingClassifier(learning_rate=0.05, max_depth=2, min_samples_leaf=15,\n                           random_state=42)",
+    "Gradient boosting / 2": "GradientBoostingClassifier(learning_rate=0.05, min_samples_leaf=15,\n                           random_state=42)",
+    "KNN / 0": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('kneighborsclassifier', KNeighborsClassifier(n_neighbors=15))])",
+    "KNN / 1": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('kneighborsclassifier', KNeighborsClassifier(n_neighbors=35))])",
+    "KNN / 2": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('kneighborsclassifier', KNeighborsClassifier(n_neighbors=75))])",
+    "SVM / 0": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('svc', SVC(C=0.1, random_state=42))])",
+    "SVM / 1": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('svc', SVC(random_state=42))])",
+    "SVM / 2": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('svc', SVC(C=10.0, random_state=42))])",
+    "MLP / 0": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('mlpclassifier',\n                 MLPClassifier(early_stopping=True, hidden_layer_sizes=(16,),\n                               max_iter=600, random_state=42))])",
+    "MLP / 1": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('mlpclassifier',\n                 MLPClassifier(early_stopping=True, hidden_layer_sizes=(32,),\n                               max_iter=600, random_state=42))])",
+    "MLP / 2": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('mlpclassifier',\n                 MLPClassifier(early_stopping=True, hidden_layer_sizes=(32, 16),\n                               max_iter=600, random_state=42))])"
+  },
+  "test_evaluated": false,
+  "budget_note": "Three configurations per family, not equal compute time."
+}

@@ -1,0 +1,18 @@
+{
+  "method": "Logistic regression / 2",
+  "family": "Logistic regression",
+  "config": 2,
+  "features": [
+    "clicks_w1",
+    "clicks_w2",
+    "clicks_w3",
+    "clicks_w4",
+    "active_days",
+    "days_since_activity",
+    "last_week_change",
+    "total_clicks"
+  ],
+  "validation_recall_at_10pct": 0.1759656652360515,
+  "validation_average_precision": 0.17814114612573478,
+  "test_evaluated": false
+}

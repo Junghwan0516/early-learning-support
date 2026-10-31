@@ -1,0 +1,7 @@
+activity_pattern,learners,withdrawals,median_total_clicks,withdrawal_rate
+No activity,95,32,0.0,0.3368421052631579
+Early only,64,21,28.0,0.328125
+Late only,91,24,26.0,0.26373626373626374
+Decreased,351,59,150.0,0.16809116809116809
+Similar,691,92,174.0,0.13314037626628075
+Increased,230,41,123.0,0.1782608695652174

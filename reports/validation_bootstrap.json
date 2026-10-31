@@ -1,0 +1,7 @@
+{
+  "selected_method": "Logistic regression / 2",
+  "difference": 0.02145922746781115,
+  "lower": -0.004237738910926783,
+  "upper": 0.04291971231223177,
+  "note": "Exploratory conditional-on-fitted-model interval; model selection is not accounted for. Not final-test evidence."
+}

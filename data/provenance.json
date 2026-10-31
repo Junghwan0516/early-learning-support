@@ -1,0 +1,49 @@
+{
+  "source_url": "https://archive.ics.uci.edu/static/public/349/open+university+learning+analytics+dataset.zip",
+  "retrieved": "2026-10-25",
+  "sha256": "f2ed1902616c1fe8d2824d872c0b7d2d72be435bf0124d077044fe4be2c6d3e4",
+  "module": "BBB",
+  "presentations": [
+    "2013B",
+    "2013J",
+    "2014J"
+  ],
+  "source_rows_selected": 6296,
+  "unknown_withdrawal_date_excluded": 12,
+  "conflicting_outcome_excluded": 1,
+  "feature_rows_before_repeat_exclusion": 5062,
+  "split_audit": [
+    {
+      "split": "train",
+      "presentation": "2013B",
+      "eligible_before_dedup": 1522,
+      "excluded_repeat_learners": 0,
+      "rows": 1522,
+      "withdrawn": 269,
+      "withdrawal_rate": 0.17674113009198422
+    },
+    {
+      "split": "validation",
+      "presentation": "2013J",
+      "eligible_before_dedup": 1816,
+      "excluded_repeat_learners": 28,
+      "rows": 1788,
+      "withdrawn": 233,
+      "withdrawal_rate": 0.1303131991051454
+    },
+    {
+      "split": "test",
+      "presentation": "2014J",
+      "eligible_before_dedup": 1724,
+      "excluded_repeat_learners": 39,
+      "rows": 1685,
+      "withdrawn": 219,
+      "withdrawal_rate": 0.12997032640949555
+    }
+  ],
+  "license": "CC BY 4.0",
+  "derived_data_note": "features_day28.csv is a transformed subset of OULAD. No outcome values are input features.",
+  "feature_sha256": "c1dce1a70b51e80a3b5d443d7a103186f4501c7dd384e258e4170b7706f9bb49",
+  "raw_reconstruction_verified": "2026-10-31; all feature values and row order matched",
+  "model_results_location": "reports/validation_comparison.csv; validation-only; final test not evaluated"
+}

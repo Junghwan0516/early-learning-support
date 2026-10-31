@@ -1,0 +1,4 @@
+split,presentation,eligible_before_dedup,excluded_repeat_learners,rows,withdrawn,withdrawal_rate
+train,2013B,1522,0,1522,269,0.17674113009198422
+validation,2013J,1816,28,1788,233,0.1303131991051454
+test,2014J,1724,39,1685,219,0.12997032640949555

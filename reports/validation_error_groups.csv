@@ -1,0 +1,5 @@
+review_outcome,total_clicks,active_days,days_since_activity,learners
+Captured withdrawal,0.0,0.0,28.0,41
+Missed withdrawal,82.0,7.0,3.0,192
+Reviewed non-withdrawal,0.0,0.0,28.0,138
+Unreviewed non-withdrawal,95.0,8.0,2.0,1417
