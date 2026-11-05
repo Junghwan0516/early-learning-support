@@ -1,5 +1,7 @@
 # Early Learning Support
 
+> **Second portfolio project:** [Science Answer Benchmark — data, audit notebooks, and 14 analysis figures](projects/science-answer-benchmark/README.md). This independent subproject currently covers data analysis only.
+
 ### From early engagement signals to learner-review ranking
 
 **At day 28, if an educator can review only 10% of learners, which method identifies the most learners who later withdraw?**
